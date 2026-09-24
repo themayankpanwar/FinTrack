@@ -738,3 +738,475 @@ body {
     background: #dc2626;
     color: #ffffff;
 }
+
+
+
+/* =========================================================
+   FINTRACK LIGHT MODE
+   ========================================================= */
+
+body.light-mode {
+    background: #f5f7fb !important;
+    color: #1f2937 !important;
+}
+
+/* Main containers / cards */
+body.light-mode .card,
+body.light-mode .dashboard-card,
+body.light-mode .stat-card,
+body.light-mode .form-card,
+body.light-mode .settings-card,
+body.light-mode .table-card,
+body.light-mode .report-card {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-color: #e5e7eb !important;
+}
+
+/* Text */
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode p,
+body.light-mode span,
+body.light-mode label {
+    color: #1f2937;
+}
+
+/* Secondary text */
+body.light-mode .subtitle,
+body.light-mode .description,
+body.light-mode .muted,
+body.light-mode .text-muted {
+    color: #6b7280 !important;
+}
+
+/* Navigation */
+body.light-mode nav,
+body.light-mode .navbar,
+body.light-mode .header,
+body.light-mode .topbar {
+    background: #ffffff !important;
+    border-bottom-color: #e5e7eb !important;
+}
+
+body.light-mode nav a,
+body.light-mode .navbar a,
+body.light-mode .nav-link {
+    color: #374151 !important;
+}
+
+body.light-mode nav a:hover,
+body.light-mode .navbar a:hover,
+body.light-mode .nav-link:hover {
+    color: #111827 !important;
+}
+
+/* Inputs */
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-color: #d1d5db !important;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #9ca3af !important;
+}
+
+/* Tables */
+body.light-mode table {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+}
+
+body.light-mode th {
+    background: #f3f4f6 !important;
+    color: #374151 !important;
+}
+
+body.light-mode td {
+    color: #374151 !important;
+    border-color: #e5e7eb !important;
+}
+
+body.light-mode tr:hover {
+    background: #f9fafb !important;
+}
+
+/* Footer */
+body.light-mode footer {
+    background: #ffffff !important;
+    color: #6b7280 !important;
+    border-top-color: #e5e7eb !important;
+}
+
+/* Theme switch button */
+.theme-toggle {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+    padding: 8px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    transform: translateY(-1px);
+    background: rgba(255, 255, 255, 0.14);
+}
+
+body.light-mode .theme-toggle {
+    background: #f3f4f6 !important;
+    color: #374151 !important;
+    border-color: #d1d5db !important;
+}
+
+body.light-mode .theme-toggle:hover {
+    background: #e5e7eb !important;
+}
+
+/* =========================================================
+   FINTRACK - COMPLETE LIGHT MODE
+   ========================================================= */
+
+/* ---------- GLOBAL PAGE ---------- */
+
+body.light-mode {
+    background: #f4f7fb !important;
+    color: #1e293b !important;
+}
+
+body.light-mode .main-content {
+    background: #f4f7fb !important;
+    color: #1e293b !important;
+}
+
+/* ---------- SIDEBAR ---------- */
+
+body.light-mode .sidebar {
+    background: #ffffff !important;
+    border-right: 1px solid #e5e7eb !important;
+    color: #334155 !important;
+}
+
+body.light-mode .sidebar *,
+body.light-mode .sidebar a,
+body.light-mode .sidebar span,
+body.light-mode .sidebar p {
+    color: #475569 !important;
+}
+
+body.light-mode .sidebar .logo,
+body.light-mode .sidebar .brand,
+body.light-mode .sidebar .brand-name {
+    color: #111827 !important;
+}
+
+body.light-mode .sidebar .menu-title,
+body.light-mode .sidebar .section-title {
+    color: #94a3b8 !important;
+}
+
+body.light-mode .sidebar a:hover {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+}
+
+body.light-mode .sidebar a.active,
+body.light-mode .sidebar .active {
+    background: #2563eb !important;
+    color: #ffffff !important;
+}
+
+body.light-mode .sidebar a.active *,
+body.light-mode .sidebar .active * {
+    color: #ffffff !important;
+}
+
+/* ---------- TOP BAR ---------- */
+
+body.light-mode .topbar {
+    background: #ffffff !important;
+    border-bottom: 1px solid #e5e7eb !important;
+    color: #1e293b !important;
+}
+
+body.light-mode .topbar *,
+body.light-mode .topbar span {
+    color: #334155 !important;
+}
+
+/* ---------- PAGE HEADINGS ---------- */
+
+body.light-mode h1,
+body.light-mode h2,
+body.light-mode h3,
+body.light-mode h4,
+body.light-mode h5 {
+    color: #111827 !important;
+}
+
+body.light-mode p {
+    color: #64748b;
+}
+
+/* ---------- DASHBOARD CARDS ---------- */
+
+body.light-mode .stat-card,
+body.light-mode .dashboard-card,
+body.light-mode .content-card,
+body.light-mode .transaction-card,
+body.light-mode .report-card,
+body.light-mode .report-section,
+body.light-mode .form-card,
+body.light-mode .settings-card,
+body.light-mode .table-card {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 4px 18px rgba(15, 23, 42, 0.06) !important;
+}
+
+/* ---------- CARD TEXT ---------- */
+
+body.light-mode .stat-card *,
+body.light-mode .dashboard-card *,
+body.light-mode .content-card *,
+body.light-mode .transaction-card *,
+body.light-mode .report-card *,
+body.light-mode .report-section *,
+body.light-mode .form-card *,
+body.light-mode .settings-card *,
+body.light-mode .table-card * {
+    border-color: #e5e7eb;
+}
+
+body.light-mode .stat-card h3,
+body.light-mode .dashboard-card h3,
+body.light-mode .content-card h3,
+body.light-mode .transaction-card h3,
+body.light-mode .report-card h3,
+body.light-mode .settings-card h3 {
+    color: #111827 !important;
+}
+
+body.light-mode .stat-card p,
+body.light-mode .dashboard-card p,
+body.light-mode .content-card p,
+body.light-mode .transaction-card p,
+body.light-mode .report-card p,
+body.light-mode .settings-card p {
+    color: #64748b !important;
+}
+
+/* ---------- FORMS ---------- */
+
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #94a3b8 !important;
+}
+
+body.light-mode input:focus,
+body.light-mode select:focus,
+body.light-mode textarea:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10) !important;
+}
+
+body.light-mode label {
+    color: #334155 !important;
+}
+
+/* ---------- TRANSACTIONS TABLE ---------- */
+
+body.light-mode table {
+    background: #ffffff !important;
+    color: #334155 !important;
+}
+
+body.light-mode th {
+    background: #f8fafc !important;
+    color: #475569 !important;
+    border-bottom: 1px solid #e2e8f0 !important;
+}
+
+body.light-mode td {
+    background: #ffffff !important;
+    color: #334155 !important;
+    border-bottom: 1px solid #eef2f7 !important;
+}
+
+body.light-mode tr:hover td {
+    background: #f8fafc !important;
+}
+
+/* ---------- TABLE BADGES ---------- */
+
+body.light-mode .category-badge {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+}
+
+/* ---------- INCOME / EXPENSE ---------- */
+
+body.light-mode .income,
+body.light-mode .income-value,
+body.light-mode .report-income {
+    color: #16a34a !important;
+}
+
+body.light-mode .expense,
+body.light-mode .expense-value,
+body.light-mode .report-expense {
+    color: #dc2626 !important;
+}
+
+body.light-mode .balance,
+body.light-mode .balance-value,
+body.light-mode .report-balance {
+    color: #2563eb !important;
+}
+
+/* ---------- BUTTONS ---------- */
+
+body.light-mode button,
+body.light-mode .btn {
+    color: #ffffff;
+}
+
+body.light-mode .theme-toggle {
+    background: #f8fafc !important;
+    color: #334155 !important;
+    border: 1px solid #cbd5e1 !important;
+}
+
+/* ---------- QUICK ACTIONS ---------- */
+
+body.light-mode .quick-actions,
+body.light-mode .quick-action-card {
+    background: #ffffff !important;
+    color: #334155 !important;
+    border-color: #e5e7eb !important;
+}
+
+/* ---------- REPORTS ---------- */
+
+body.light-mode .report-table,
+body.light-mode .report-table-container {
+    background: #ffffff !important;
+    color: #334155 !important;
+}
+
+body.light-mode .report-table th {
+    background: #f8fafc !important;
+    color: #64748b !important;
+}
+
+body.light-mode .report-table td {
+    background: #ffffff !important;
+    color: #334155 !important;
+}
+
+/* ---------- SETTINGS ---------- */
+
+body.light-mode .profile-summary {
+    background: #f8fafc !important;
+    border-color: #e2e8f0 !important;
+}
+
+body.light-mode .profile-info strong {
+    color: #111827 !important;
+}
+
+body.light-mode .profile-info span {
+    color: #64748b !important;
+}
+
+body.light-mode .account-row {
+    border-color: #e5e7eb !important;
+}
+
+body.light-mode .account-label {
+    color: #64748b !important;
+}
+
+body.light-mode .account-value {
+    color: #334155 !important;
+}
+
+/* ---------- EMPTY STATES ---------- */
+
+body.light-mode .empty-state,
+body.light-mode .empty-state p {
+    color: #64748b !important;
+}
+
+body.light-mode .empty-state h3 {
+    color: #334155 !important;
+}
+
+/* ---------- ALERTS ---------- */
+
+body.light-mode .success-alert {
+    background: #dcfce7 !important;
+    color: #166534 !important;
+    border-color: #bbf7d0 !important;
+}
+
+body.light-mode .error-alert {
+    background: #fee2e2 !important;
+    color: #991b1b !important;
+    border-color: #fecaca !important;
+}
+
+/* ---------- LINKS ---------- */
+
+body.light-mode a {
+    color: #2563eb;
+}
+
+body.light-mode a:hover {
+    color: #1d4ed8;
+}
+
+/* ---------- SCROLLBAR ---------- */
+
+body.light-mode ::-webkit-scrollbar {
+    width: 8px;
+}
+
+body.light-mode ::-webkit-scrollbar-track {
+    background: #f1f5f9;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+}
+
+body.light-mode ::-webkit-scrollbar-thumb:hover {
+    background: #94a3b8;
+}
+
+/* Fix dashboard amounts in Light Mode */
+
+body.light-mode .stat-value,
+body.light-mode .stat-amount {
+    color: #111827 !important;
+    font-weight: 700 !important;
+}

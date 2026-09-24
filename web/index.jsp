@@ -607,12 +607,132 @@
 
         }
 
-    </style>
+    
 
+/* =========================================================
+   GLOBAL THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 9px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+body.light-mode .theme-toggle {
+    background: #f8fafc !important;
+    color: #334155 !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .theme-toggle:hover {
+    background: #e2e8f0 !important;
+}
+
+/* =========================================================
+   LANDING PAGE - LIGHT MODE
+   ========================================================= */
+
+body.light-mode {
+    background: #f5f7fb !important;
+    color: #1e293b !important;
+}
+
+body.light-mode #ft-navbar {
+    background: #ffffff !important;
+    border-bottom-color: #e5e7eb !important;
+}
+
+body.light-mode #ft-brand-name {
+    color: #111827 !important;
+}
+
+body.light-mode #ft-navigation a {
+    color: #64748b !important;
+}
+
+body.light-mode #ft-navigation a:hover {
+    color: #2563eb !important;
+}
+
+body.light-mode #ft-hero {
+    background: #f5f7fb !important;
+}
+
+body.light-mode #ft-hero h1,
+body.light-mode #ft-hero-content h1 {
+    color: #111827 !important;
+}
+
+body.light-mode #ft-description {
+    color: #64748b !important;
+}
+
+body.light-mode #ft-badge {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+    border-color: #bfdbfe !important;
+}
+
+body.light-mode .ft-feature {
+    background: #ffffff !important;
+    border-color: #e5e7eb !important;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.05) !important;
+}
+
+body.light-mode .ft-feature h3,
+body.light-mode .ft-feature p {
+    color: #334155 !important;
+}
+
+body.light-mode .ft-feature-icon {
+    background: #eff6ff !important;
+    color: #2563eb !important;
+}
+
+body.light-mode #ft-footer {
+    background: #ffffff !important;
+    border-top-color: #e5e7eb !important;
+    color: #64748b !important;
+}
+
+</style>
+
+
+<style>
+.theme-toggle.theme-floating {
+    position: fixed;
+    top: 18px;
+    right: 22px;
+    z-index: 9999;
+}
+</style>
 </head>
 
 
 <body>
+
+
+<button type="button" id="themeToggle" class="theme-toggle theme-floating">
+    ☀️ Light
+</button>
+
 
 
 <!-- ================= NAVBAR ================= -->
@@ -806,7 +926,7 @@
 
 </footer>
 
-
+<script src="js/theme.js"></script>
 </body>
 
 </html>

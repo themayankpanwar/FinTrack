@@ -315,12 +315,121 @@
 
         }
 
-    </style>
+    
 
+/* =========================================================
+   GLOBAL THEME TOGGLE
+   ========================================================= */
+
+.theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    border: 1px solid #334155;
+    background: #1e293b;
+    color: #f8fafc;
+    padding: 9px 13px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.theme-toggle:hover {
+    background: #334155;
+    transform: translateY(-1px);
+}
+
+body.light-mode .theme-toggle {
+    background: #f8fafc !important;
+    color: #334155 !important;
+    border-color: #cbd5e1 !important;
+    box-shadow: 0 2px 6px rgba(15, 23, 42, 0.05);
+}
+
+body.light-mode .theme-toggle:hover {
+    background: #e2e8f0 !important;
+}
+
+/* =========================================================
+   AUTH PAGES - LIGHT MODE
+   ========================================================= */
+
+body.light-mode .auth-page {
+    background: #f5f7fb !important;
+}
+
+body.light-mode .auth-card {
+    background: #ffffff !important;
+    border: 1px solid #e5e7eb !important;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08) !important;
+}
+
+body.light-mode .auth-card-header h1,
+body.light-mode .auth-card-header h2 {
+    color: #111827 !important;
+}
+
+body.light-mode .auth-card-header p {
+    color: #64748b !important;
+}
+
+body.light-mode .auth-form-group label {
+    color: #334155 !important;
+}
+
+body.light-mode .auth-input {
+    background: #ffffff !important;
+    color: #1e293b !important;
+    border-color: #cbd5e1 !important;
+}
+
+body.light-mode .auth-input::placeholder {
+    color: #94a3b8 !important;
+}
+
+body.light-mode .auth-input:focus {
+    border-color: #2563eb !important;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.10) !important;
+}
+
+body.light-mode .auth-link {
+    color: #2563eb !important;
+}
+
+body.light-mode .auth-footer {
+    color: #64748b !important;
+}
+
+body.light-mode .auth-error {
+    background: #fee2e2 !important;
+    color: #991b1b !important;
+    border-color: #fecaca !important;
+}
+
+</style>
+
+
+<style>
+.theme-toggle.theme-floating {
+    position: fixed;
+    top: 18px;
+    right: 22px;
+    z-index: 9999;
+}
+</style>
 </head>
 
 
 <body>
+
+
+<button type="button" id="themeToggle" class="theme-toggle theme-floating">
+    ☀️ Light
+</button>
+
 
 
 <div class="auth-page">
@@ -465,7 +574,7 @@
 
 </div>
 
-
+<script src="js/theme.js"></script>
 </body>
 
 </html>
